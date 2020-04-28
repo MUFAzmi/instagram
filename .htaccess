@@ -1,0 +1,20 @@
+RewriteEngine On
+RewriteRule ^profile?$ profile.php
+RewriteRule ^profile/([a-z]+) profile.php?u=$1
+RewriteRule ^camera?$ camera.php
+RewriteRule ^chat?$ chat.php
+RewriteRule ^dashboard?$ dashboard.php
+RewriteRule ^editprofile?$ editprofile.php
+RewriteRule ^login?$ login.php
+RewriteRule ^signup?$ signup.php
+RewriteRule ^message?$ message.php
+RewriteRule ^notification?$ notification.php
+RewriteRule ^video?$ video.php
+RewriteRule ^index?$ index.php
+RewriteRule ^logout?$ logout.php
+RewriteRule ^about?$ about.php
+RewriteRule ^add?$ add.php
+RewriteRule ^delete?$ delete.php
+RewriteRule ^post/([0-9]+) post.php?p=$1
+ReWriteRule ^post?$ post.php
+ReWriteRule ^([a-zA-Z]+)$ profile.php?u=$1
